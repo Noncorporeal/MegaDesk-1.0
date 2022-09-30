@@ -40,7 +40,7 @@ namespace MegaDesk_1._0
 			this.label5 = new System.Windows.Forms.Label();
 			this.Rush = new System.Windows.Forms.ComboBox();
 			this.label6 = new System.Windows.Forms.Label();
-			this.Name = new System.Windows.Forms.TextBox();
+			this.CustomerName = new System.Windows.Forms.TextBox();
 			this.GetQuote = new System.Windows.Forms.Button();
 			this.Cancel = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.Depth)).BeginInit();
@@ -113,6 +113,11 @@ namespace MegaDesk_1._0
 			// Drawers
 			// 
 			this.Drawers.Location = new System.Drawing.Point(160, 96);
+			this.Drawers.Maximum = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
 			this.Drawers.Name = "Drawers";
 			this.Drawers.Size = new System.Drawing.Size(80, 20);
 			this.Drawers.TabIndex = 4;
@@ -180,12 +185,12 @@ namespace MegaDesk_1._0
 			this.label6.TabIndex = 10;
 			this.label6.Text = "Customer Name";
 			// 
-			// Name
+			// CustomerName
 			// 
-			this.Name.Location = new System.Drawing.Point(112, 16);
-			this.Name.Name = "Name";
-			this.Name.Size = new System.Drawing.Size(200, 20);
-			this.Name.TabIndex = 11;
+			this.CustomerName.Location = new System.Drawing.Point(112, 16);
+			this.CustomerName.Name = "CustomerName";
+			this.CustomerName.Size = new System.Drawing.Size(200, 20);
+			this.CustomerName.TabIndex = 11;
 			// 
 			// GetQuote
 			// 
@@ -214,7 +219,7 @@ namespace MegaDesk_1._0
 			this.ClientSize = new System.Drawing.Size(337, 277);
 			this.Controls.Add(this.Cancel);
 			this.Controls.Add(this.GetQuote);
-			this.Controls.Add(this.Name);
+			this.Controls.Add(this.CustomerName);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.Rush);
 			this.Controls.Add(this.label5);
@@ -226,6 +231,7 @@ namespace MegaDesk_1._0
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.Width);
 			this.Controls.Add(this.Depth);
+			this.Name = "AddQuote";
 			this.Text = "Add Quote";
 			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddQuote_FormClosed);
 			((System.ComponentModel.ISupportInitialize)(this.Depth)).EndInit();
@@ -249,7 +255,7 @@ namespace MegaDesk_1._0
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.ComboBox Rush;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox Name;
+		private System.Windows.Forms.TextBox CustomerName;
 		private System.Windows.Forms.Button GetQuote;
 		private System.Windows.Forms.Button Cancel;
 	}
